@@ -22,10 +22,5 @@ int reverse(int x)
         answer = answer *10 +temp1;
         x =(x- temp1)/10; 
     }
-    if(sign*abs(answer) <-2147483648 || sign*abs(answer)> 2147483647){
-        return 0;
-    }
-    else{
-        return sign*abs(answer);
-    }
+    return sign*abs(answer);
 }
